@@ -1,0 +1,38 @@
+body
+    {
+        width:80%;
+        margin:auto;
+        background-color: saddlebrown;
+        font-family:fantasy;
+        color:white;
+        
+    }
+#header
+    {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;   
+        margin-top: 5px;
+        padding:5px;
+    }
+
+#nav
+    {
+        display:flex;
+        justify-content:flex-end;
+        align-items: center;
+        border:solid white 0.1em;
+    }
+
+.pays
+    {
+        flex:1;
+        border:solid white 0.1em;
+
+    }
+
+.witsunday
+    {
+        width:900px;
+        height:100px;
+    }
