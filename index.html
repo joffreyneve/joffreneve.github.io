@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 
-    <head> <meta charset="utf_8"/><link rel="stylesheet" href="siteinternetvoyage.css" />
+    <head> <meta charset="utf_8"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="siteinternetvoyage.css" />
         <title>voyage</title>
     </head>
 
 
 <body>
-        <header>
+        <header class="text-center">
                 <h1>My life travel</h1>
+                <form method="post" action="phppage">
+                        <p><label for="id">ID:</label><input type="text" placeholder="identifiant" for="id" name="id"/>
+                        <label for="password">Password:</label><input type="password" id="password" name="password" placeholder="Password"/></p>                       
+                </form>
         </header>
-
         <div class="pays">
             
-                <li><a href="#AUSTRALIE">AUSTRALIE</a></li>
-                <li><a href="#ISLANDE">ISLANDE</a></li>
-                <li><a href ="#ROYAUME-UNI">ROYAUME-UNI</a></li>
-                <li><a href="#ASIE">ASIE</a></li>
+                <a href="#AUSTRALIE">AUSTRALIE</a>
+                <a href="#ISLANDE">ISLANDE</a>
+                <a href ="#ROYAUME-UNI">ROYAUME-UNI</a>
+                <a href="#ASIE">ASIE</a>
             </div>
+            
+
             <nav>
-                <div class="witsunday"></div>
-                        
+                <div class="legende"> L'une des plus belles plages du monde!</div>
+                </div>       
                 <div id="presentation">
                     <h2>Qui je suis?</h2>
                     <p>Je m'appelle <em>JOFFREY NEVE</em> j'ai 27ans et j'habite le sud-est de la France dans une région montagneuse, j'ai eu la chance de visiter quelques pays ces 8 dernières années. Ce site n'est pas un routard ou un site descriptif mais plutôt un livre d'or. Pour information je ne suis jamais parti seul. Mes compagnons sont des amis proches que je continu de voir régulièrement.</p>
@@ -34,6 +41,36 @@
                     <p>Ce site a pour but de me rappeller ce que j'ai fais durant ma jeunesse. Si un sourire se forme sur votre visage au moment de la lecture alors ma satisfaction sera grande. N'oublions pas qu'il y a des heures de boulot derrière ce site internet entièrement cousu main.</p>
                 </div>
             </aside>
+        <table>
+            <caption>destinations</caption> 
+                <tr>
+                    <th>pays</th>
+                    <th>date</th>
+                    <th>durée</th>
+                </tr>
+                <tr>
+                    <td>Islande</td>
+                    <td>2017</td>
+                    <td>2semaines</td>
+                </tr>
+                <tr>       
+                    <td>australie</td>
+                    <td>2014</td>
+                    <td>7mois</td>
+                </tr>
+                <tr>
+                    <td>irlande</td>
+                    <td>2017</td>
+                    <td>2mois</td>
+                </tr>
+        </table>
+
+        <form method="post" action="pagetraitement.php">
+            <label for="pseudo">Pseudo:</label><input type="texte" name="pseudo" id="pseudo" placeholder="votre pseudo" size="50px"/>
+            <label for="âge">âge:</label><input type="number" name="âge" id="âge" placeholder="votre âge" min="15"/>
+
+
+        </form>
              
     <section>    
     
@@ -46,6 +83,7 @@
                 Un souvenir incroyable lorsque l'on chassait les aurores boréales dans le désert nocturne. Le vent et le froid glacial du matin, la chaleur ressourçante des bains de l'après-midi.
                 Un grand bol d'air dans une vie si rapide que l'on manque de prendre le temps.</p>
         <h2 id="ROYAUME-UNI">Le Royaunme-Uni</h2>
+        <video src="videoirl.mp4" controls width="80%"></video>
             <p>Le ROYAUME-UNI a été un tournant dans la deuxième aventure. D'abbord à 4 pour finir à 2. La succession de rencontre et de nouveautés marqueront mes souvenirs dans ce pays. La première information importante est notre role dans le woofing "volontariat". Nous avons baigné dans un milieu indiscutablement chelou. Désolé du terme mais là vraiemnt il n'y a pas d'autre mot approprié. 
               Et puis, pour déconner, un petit trip en tente dans les highlands de l'Ecosse hivernale. Imaginez plutôt: "un joli coin de liberté,une voiture automatique prêté, une tente prêté, des duvets que même lidl aurait honte de vendre et tout ça avec des températures négatives." On peut le dire, notre moral nous a sauvé. Bon c'est aussi lui qui nous a mit dedans.    
             </p>
@@ -59,5 +97,3 @@
             <footer><a href="mailto:joffreyneve@gmail.com">Me contacter</a></footer>
 </body>
 </html>
-
-
